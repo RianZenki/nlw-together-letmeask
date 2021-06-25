@@ -221,6 +221,8 @@ Sempre que tiver uma informação que será alterado ao longo do uso da aplicaç
 
 Sempre que uma informação não permanece com o mesmo valor durante todo o uso da aplicação, é um *estado*, é armazenado um estado. 
 
+O estado é uma variável que possui sua vida apenas enquanto o usuário está na aplicação, caso a pessoa de um f5 ou feche a aplicação, o estádo é perdido. Então é preciso uma forma de recuperar esses dado, pode ser utilizando o useEffect. 
+
 Ao criarmos o componente Button a seguir:
 
       export function Button() {
